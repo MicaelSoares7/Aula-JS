@@ -21,11 +21,23 @@
             font-size: 13px;
             font-weight: bolder;
         }
+        .btlayout{
+            font-size: 15px;
+            background-color: black;
+            border-radius: 8px;
+            color: white;
+            float: right;
+        }
+        /* .btlayout:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        } */
     </style>
 </head>
-<body>
+<body style="font-size: 20px;">
     <h2>Cálculo de Média</h2>
-    <div style="padding: 10px;border:2px solid; background-color: rgb(48, 185, 185); box-shadow: 4px 4px rgb(128, 128, 128);">
+    <div style="padding: 10px;border:2px solid rgb(226, 43, 43); background-color: rgb(48, 195, 195); box-shadow: 4px 4px gray;">
         <label for="nota1" name="nota1">Nota 1:</label>
         <input id="nota1" type="text" placeholder="0.0"> <br>
         <label for="nota2" name="nota2">Nota 2:</label>
@@ -33,6 +45,7 @@
         <div>
             <button onclick="calcular();">Média</button>
             <button onclick="limpar();">Limpar</button>
+            <button onclick="aterarLayout();" class="btlayout">Modo Dark</button>
         </div>
         <h3 class="result">Resultado:</h3>
     </div>
