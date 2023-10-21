@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=(), initial-scale=1.0">
-    <title>Document</title>
+    <title>Exemplo 1</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        input,label{
+            margin: 6px;
+            width: 70%;
+            font-weight: bold;
+        }
+        button{
+            /* float: left; */
+            padding: 4px;
+            margin: 4px;
+            width: 80px;
+            font-size: 13px;
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
-    <h1>Cálculo de Média</h1>
-    <div style="background-color: aqua; padding: 15px;">
-        
+    <h2>Cálculo de Média</h2>
+    <div style="padding: 10px;border:2px solid; background-color: rgb(48, 185, 185); box-shadow: 4px 4px rgb(128, 128, 128);">
+        <label for="nota1" name="nota1">Nota 1:</label>
+        <input id="nota1" type="text" placeholder="0.0"> <br>
+        <label for="nota2" name="nota2">Nota 2:</label>
+        <input id="nota2" type="text" placeholder="0.0"> <br>
         <div>
-            <label for="nota1">Nota 1:</label>
-            <input type="text" name="nota" id="nota1" placeholder="0.0" style="margin-bottom: 10px;">
-            <br>
-            <label for="nota2">Nota 2:</label>
-            <input type="text" name="nota" id="nota2" placeholder="0.0" style="margin-bottom: 10px;">
-            <br>
             <button onclick="calcular();">Média</button>
             <button onclick="limpar();">Limpar</button>
         </div>
@@ -27,14 +42,14 @@
             const nota2 = parseFloat(document.getElementById("nota2").value);
             let media = (nota1+nota2)/2;
             const resultado = document.getElementsByClassName("result");
-            resultado[0].innerHTML = "Resultado" + media;
+            resultado[0].innerHTML = "Resultado: "+media;  
         }
         function limpar(){
             const caixa = document.getElementsByTagName("input");
             console.log(caixa);
-            caixa[0].valeu = "";
-            caixa[1].valeu = "";
-            documet.getElementsByClassName("result")[0].innerHTML = "Resultado:"
+            caixa[0].value = "";
+            caixa[1].value = "";
+            document.getElementsByClassName("result")[0].innerHTML = "Resultado:"
         }
     </script>
 </body>
