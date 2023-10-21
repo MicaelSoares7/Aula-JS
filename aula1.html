@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=(), initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cálculo de Média</h1>
+    <div style="background-color: aqua; padding: 15px;">
+        
+        <div>
+            <label for="nota1">Nota 1:</label>
+            <input type="text" name="nota" id="nota1" placeholder="0.0" style="margin-bottom: 10px;">
+            <br>
+            <label for="nota2">Nota 2:</label>
+            <input type="text" name="nota" id="nota2" placeholder="0.0" style="margin-bottom: 10px;">
+            <br>
+            <button onclick="calcular();">Média</button>
+            <button onclick="limpar();">Limpar</button>
+        </div>
+        <h3 class="result">Resultado:</h3>
+    </div>
+    <script>
+        function calcular(){
+            const nota1 = parseFloat(document.getElementById("nota1").value);
+            const nota2 = parseFloat(document.getElementById("nota2").value);
+            let media = (nota1+nota2)/2;
+            const resultado = document.getElementsByClassName("result");
+            resultado[0].innerHTML = "Resultado" + media;
+        }
+        function limpar(){
+            const caixa = document.getElementsByTagName("input");
+            console.log(caixa);
+            caixa[0].valeu = "";
+            caixa[1].valeu = "";
+            documet.getElementsByClassName("result")[0].innerHTML = "Resultado:"
+        }
+    </script>
+</body>
+</html>
