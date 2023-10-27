@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+<body>
+    <img src="galinha.png" id="imagem" width="500" alt="imagem galinha">
+    <br>
+    <button onclick="trocar()">Trocar imagem</button>
+    <script>
+        let modo = 0;
+        function trocar(){
+            if(modo == 0){
+                document.getElementById("imagem").src = "minions.png";
+                modo = 1;
+            } else{
+                document.getElementById("imagem").src = "galinha.png";
+                modo = 0;
+            }
+        }
+    </script>
+</body>
+</html>
