@@ -26,14 +26,20 @@
         }
         ul li a{
             background-color: white;
-            color: crimson;
+            color: black;
             text-decoration: none;
             padding: 10px;
             border-radius: 10px;
         }
         ul li a:hover{
-            background-color: crimson;
+            background-color: rgba(129, 65, 225, 0.284);
             color: white;
+        }
+        .active{
+            background-color: rgb(129, 65, 225);
+        }
+        .active:hover{
+            background-color: rgb(129, 65, 225);
         }
     </style>
 </head>
@@ -41,6 +47,9 @@
     <header>
         <h1>Escolha o exemplo que deseja visualizar:</h1>
         <ul>
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
             <li>
                 <a href="exemplo1.html">Exemplo 1</a>
             </li>
