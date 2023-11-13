@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo 12</title>
+    <style>
+
+        /* HEADER */
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        header{
+            margin: 15px;
+            padding: 10px;
+            background-color: rgb(22, 22, 22);
+            color: white;
+        }
+        header>h1{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            display:inline;
+        }
+        ul li a{
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        ul li a:hover{
+            background-color: rgba(129, 65, 225, 0.284);
+            color: white;
+        }
+        .active{
+            background-color: rgb(129, 65, 225);
+        }
+        .active:hover{
+            background-color: rgb(129, 65, 225);
+        }
+    </style>
 </head>
 <body style="background-color: lightsteelblue;">
+    <header>
+        <h1>Escolha o exemplo que deseja visualizar:</h1>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="exemplo1.html">Exemplo 1</a>
+            </li>
+            <li>
+                <a href="exemplo2.html">Exemplo 2</a>
+            </li>
+            <li>
+                <a href="exemplo3.html" class="active">Exemplo 3</a>
+            </li>
+            <li>
+                <a href="exemplo4.html">Exemplo 4</a>
+            </li>
+        </ul>
+    </header>
     <h2>Exemplo 12</h2>
     <p>Alterar o texto do input</p>
     <label for="caixa">Nome: </label>
