@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 17</title>
+    <style>
+        div{
+            background: linear-gradient(green, lightgreen, green);
+            color: black;
+            padding: 5%;
+            border-radius: 20px;
+            border: 6px solid;
+            border-style: outset;
+            
+        }
+        input[type="text"]{
+            width: 240px;
+            height: 25px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        input[type="text"]:focus{
+            outline: 3px solid royalblue;
+        }
+        button{
+            background-color: royalblue;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            padding: 4px;
+            width: 100px;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo 17</h2>
+    <h3>Agenda</h3>
+    <div>
+        <label for="nome">Nome:</label><br>
+        <input name="nome" id="nome" type="text"><br>
+        <label for="celular">Celular:</label><br>
+        <input name="celular" id="celular" type="text"><br>
+        <button id="cadastrar" type="submit" onclick="cadastrar();">Cadastrar</button>
+    </div>
+    <div id="dados">
+        <h2>Nome - Celular</h2>
+    </div>
+    <script>
+        function cadastrar(){
+            const n = document.getElementById('nome').value;
+            const c = document.getElementById('celular').value;
+            const d = document.getElementById('dados');
+            const h3 = document.createElement("h3");
+            h3.innerHTML = n + " - " + c;
+            d.appendChild (h3);
+            document.getElementById("nome").value = "";
+            document.getElementById("celular").value = "";
+        }
+    </script>
+</body>
+</html>
