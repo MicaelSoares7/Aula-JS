@@ -32,9 +32,80 @@
             width: 100px;
             margin-top: 6px;
         }
+
+        /* HEADER */
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        header{
+            margin: 15px;
+            padding: 10px;
+            background-color: rgb(22, 22, 22);
+            color: white;
+        }
+        header>h1{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            display:inline;
+        }
+        ul li a{
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        ul li a:hover{
+            background-color: rgba(129, 65, 225, 0.284);
+            color: white;
+        }
+        .active{
+            background-color: rgb(129, 65, 225);
+        }
+        .active:hover{
+            background-color: rgb(129, 65, 225);
+        }
+    
     </style>
 </head>
 <body>
+    <header>
+        <h1>Escolha o exemplo que deseja visualizar:</h1>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="exemplo1.html">Exemplo 1</a>
+            </li>
+            <li>
+                <a href="exemplo2.html">Exemplo 2</a>
+            </li>
+            <li>
+                <a href="exemplo3.html">Exemplo 3</a>
+            </li>
+            <li>
+                <a href="exemplo4.html">Exemplo 4</a>
+            </li>
+            <li>
+                <a href="exemplo5.html">Exemplo 5</a>
+            </li>
+            <li>
+                <a href="exemplo6.html" class="active">Exemplo 6</a>
+            </li>
+            <li>
+                <a href="exemplo7.html">Exemplo 7</a>
+            </li>
+            <li>
+                <a href="exemplo8.html">Exemplo 8</a>
+            </li>
+        </ul>
+    </header>
     <h2>Exemplo 15</h2>
     <h3>Validação de formulário</h3>
     <form name="form" action="cadastro.php" onsubmit="return validarFormulario();" method="post">
